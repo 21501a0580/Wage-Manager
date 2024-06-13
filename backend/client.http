@@ -1,0 +1,57 @@
+###
+post http://localhost:4000/userapi/register
+Content-Type: application/json
+
+{
+    "username":"Ramesh",
+    "password":"9014915068"
+}
+
+###
+post http://localhost:4000/userapi/login
+Content-Type: application/json
+
+{
+    "username":"Bharath",
+    "password":"7207830961"
+}
+
+###
+put http://localhost:4000/userapi/add-group
+Content-Type: application/json
+
+{
+    "username":"Bharath",
+    "groupname":"group4"
+}
+
+###
+put http://localhost:4000/userapi/add-member
+Content-Type: application/json
+
+{
+    "username": "suresh",
+    "groupname": "group2",
+    "name":"charan"
+}
+
+###
+put http://localhost:4000/userapi/add-money
+Content-Type: application/json
+
+{
+    "username":"suresh",
+    "groupname":"cherla",
+    "name":"charan",
+    "amount":5000
+}
+
+###
+put http://localhost:4000/userapi/add-attendance
+Content-Type: application/json
+
+{
+    "username":"suresh",
+    "groupname":"group2",
+    "members":["Naresh","charan"]
+}
